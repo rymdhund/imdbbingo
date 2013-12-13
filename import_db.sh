@@ -8,7 +8,8 @@ echo "extracting.."
 gunzip -f keywords.list.gz
 
 echo "processing.."
-sed -e '1,/8: THE KEYWORDS LIST/d' keywords.list | sed -e '1,2d' | sed -e '/{/d' | sed 's/"//g' > only_keywords.list
+sed -e '1,/8: THE KEYWORDS LIST/d' keywords.list | sed -e '1,2d' | sed -e '/{/d' | sed 's/"//g' > only_keywords_latin.list
+iconv -f ISO-8859-15 -t utf-8 only_keywords_latin.list > only_keywords.list
 cat only_keywords.list | cut -f 1 | uniq -c | sort -n | sed -e '1,/^\s*9/d' | sed 's/^\s*[0-9][0-9]*\s//' > titles.list
 
 echo "preparing titles sql.."
@@ -30,4 +31,4 @@ echo "inserting keywords.."
 sqlite3 $database < keywords.sql > /dev/null 2>&1
 
 echo "cleanup.."
-rm keywords.list titles.list only_keywords.list titles.sql keywords.sql
+rm keywords.list titles.list only_keywords_latin.list only_keywords.list titles.sql keywords.sql

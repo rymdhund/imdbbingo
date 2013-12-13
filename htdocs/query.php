@@ -1,7 +1,7 @@
 <?php
 function myLog($str){
     $str .= "\n";
-    file_put_contents("search.log", $str, FILE_APPEND);
+    //file_put_contents("../log/query.log", $str, FILE_APPEND);
 }
 function search($term){
     $db = openDb();
@@ -57,7 +57,7 @@ if(array_key_exists('term', $_GET)){
 
     echo json_encode($res);
 }else if(array_key_exists('title', $_GET)){
-    $title = $_GET['title'];
+    $title = utf8_encode($_GET['title']);
     myLog("getting keywords for $title");
     echo json_encode(makeBoard($title));
 }else{
