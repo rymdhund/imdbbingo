@@ -58,6 +58,7 @@ table td {
             source: "query.php",
             minLength: 2,
             select: function( event, ui ) {
+		$("#movie").removeClass("ui-autocomplete-loading");
                 $(".newboard").remove();
                 make_board(ui.item);
             }
