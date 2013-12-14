@@ -9,7 +9,7 @@ td {text-align:center;}
 <?php
 include('header.php');
 ?>
-<p>So how do you play imdb-bingo?</p>
-<p>It's easy! Start with downloading a movie you want to watch. Then find the page for the movie on imdb and paste the url in the textbox. This gives you your board. You probably want your board on paper, so either print it or copy it by hand to a paper. When you all have your different boards you are ready to watch the movie!</p>
-<p> When something that you have on your board happens in the movie, you need to shout it aloud and mark the corresponding square. The one to first get three marks in a row is the winner.</p>
+<p>Imdb-bingo is a bingo game that you play while watching a movie. It uses the <a href=imdb.com>imdb</a> keywords for a movie to create the bingo boards.</p>
+<p>Playing it is easy! Search for the movie you want to watch in the textbox. This will generate your board. You might want to copy your board to a paper. When you all have your different boards you are ready to watch the movie!</p>
+<p> When something that you have on your board happens in the movie, you need to shout it aloud and mark the corresponding square. The one to first get three marks in a row is the winner. Some keywords are more abstract than others and you may need to discuss with your friends whether it's ok to mark a square or not.</p>
 <p><b>Example:</b> Suppose you're watching 2001: A space oddysey and you have the word "sunrise" in one of your squares. In the first scene where the sun comes up you shout "sunrise!" and since no one objects you get to mark the square.</p>
