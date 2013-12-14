@@ -6,10 +6,13 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
 <style>
 .ui-autocomplete-loading {
     background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+
+.checked {
+    background-color: green;
 }
 
 table td {
@@ -37,10 +40,10 @@ table td {
                 }
                 $("#table").append(t);
                 $(".cell").click(function(){
-                    if($(this).css('background-color') != 'transparent'){
-                        $(this).css('background-color', '');
+                    if($(this).hasClass('checked')){
+                        $(this).removeClass('checked');
                     }else{
-                        $(this).css('background-color', 'green');
+                        $(this).addClass('checked');
                     }
                 });
                         
