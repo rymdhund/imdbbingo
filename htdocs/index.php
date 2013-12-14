@@ -15,6 +15,10 @@
     background-color: green;
 }
 
+table {
+    border-collapse:collapse;
+}
+
 table td {
     border: 1px solid black;
     height: 150px;
