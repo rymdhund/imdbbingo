@@ -20,7 +20,7 @@ table {
 }
 
 table td {
-    border: 1px solid black;
+    border: 2px solid black;
     height: 150px;
     padding: 10px;
     text-align: center;
