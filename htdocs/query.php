@@ -30,7 +30,9 @@ function makeBoard($title){
     while($ret = $q->fetchArray()){
         $kws[] = $ret[0];
     }
+    shuffle($kws);
     $db->close();
+
 
     $rand_keys = array_rand($kws, 9);
     $res = Array();
