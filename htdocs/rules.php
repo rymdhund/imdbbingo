@@ -1,9 +1,8 @@
 <html>
 <head>
-<style type="text/css">
-body {font-family: "helvetica";}
-td {text-align:center;}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="only screen and (max-width: 400px)" href="style/mobile.css" />
+<link rel="stylesheet" media="only screen and (min-width: 401px)" href="style/style.css" />
 </head>
 <body>
 <?php

@@ -3,30 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>imdbbingo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="only screen and (max-width: 400px)" href="style/mobile.css" />
+<link rel="stylesheet" media="only screen and (min-width: 401px)" href="style/style.css" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<style>
-.ui-autocomplete-loading {
-    background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
-}
-
-.checked {
-    background-color: green;
-}
-
-table {
-    border-collapse:collapse;
-}
-
-table td {
-    border: 2px solid black;
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-    width: 150px;
-}
-</style>
 <script>
     $(function() {
         function make_board(item){

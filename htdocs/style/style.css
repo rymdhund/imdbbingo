@@ -1,0 +1,33 @@
+.ui-autocomplete-loading {
+    background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+
+.checked {
+    background-color: green;
+}
+
+table {
+    border-collapse:collapse;
+margin-left:auto;
+margin-right:auto;
+}
+
+table td {
+    border: 2px solid black;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+}
+
+body {
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+
+input {
+width:70%;
+}
+
