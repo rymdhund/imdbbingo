@@ -8,7 +8,7 @@ echo "extracting.."
 gunzip -f keywords.list.gz
 
 echo "processing.."
-sed -e '1,/8: THE KEYWORDS LIST/d' keywords.list | sed -e '1,2d' | sed -e -E '/{\|(VG)/d' | sed 's/"//g' > only_keywords_latin.list
+sed -e '1,/8: THE KEYWORDS LIST/d' keywords.list | sed -e '1,2d' | sed -e '/{\|(VG)/d' | sed 's/"//g' > only_keywords_latin.list
 iconv -f ISO-8859-15 -t utf-8 only_keywords_latin.list > only_keywords.list
 cat only_keywords.list | cut -f 1 | uniq -c | sort -n | sed -e '1,/^\s*9/d' | sed 's/^\s*[0-9][0-9]*\s//' > titles.list
 
