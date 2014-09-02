@@ -9,7 +9,15 @@ function search($term){
         myLog("could not open db");
         return Array();
     }
-    $sql = sprintf('SELECT name FROM movies WHERE name LIKE \'%s%%\' limit 10', $db->escapeString($term));
+    // simple full text search
+    $terms = explode(' ', $term);
+
+    $db_terms = array();
+    foreach($terms as $t){
+        $db_terms[] = sprintf('name LIKE \'%%%s%%\'', $db->escapeString($t));
+    }
+
+    $sql = sprintf('SELECT name FROM movies WHERE %s limit 10', implode(' and ', $db_terms));
     $q = $db->query($sql);
     $res = Array();
     while($ret = $q->fetchArray()){
