@@ -23,7 +23,7 @@ sed "s/'/''/g" only_keywords.list | sed "s/\t\t*/','/"| sed "s/^/INSERT INTO key
 echo "END TRANSACTION;" >> keywords.sql
 
 echo "creating tables.."
-echo "drop table if exists movies; drop table if exists keywords; create table movies (name text primary key); create table keywords (name text, kw text);" | sqlite3 $database
+echo "drop table if exists movies; drop table if exists keywords; create table movies (name text primary key); create table keywords (name text, kw text); create index idx1 on keywords(name);" | sqlite3 $database
 
 echo "inserting titles.."
 sqlite3 $database < titles.sql > /dev/null 2>&1
