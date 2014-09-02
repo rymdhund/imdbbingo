@@ -34,7 +34,7 @@
                 });
                         
                 $("#newboard").show();
-                $("body").append("<button class='newboard'>new board</button>");
+                $("#aftertable").append("<button class='newboard'>give me another board</button>");
                 $(".newboard").click(function(){
                     $(".newboard").remove();
                     make_board(item);
@@ -56,18 +56,17 @@
 </script>
 </head>
 <body>
+  <?php
+  include("header.php");
+  ?>
 
-<?php
-include("header.php");
-?>
-
-<div class="ui-widget">
-<label for="movie">Movie: </label>
-<input id="movie">
-</div>
-<br>
-<img class="loader" src="images/ui-anim_basic_16x16.gif" />
-<table id="table">
-</table>
+  <div class="ui-widget">
+    <label for="movie">Movie: </label>
+    <input id="movie">
+  </div>
+  <img class="loader" src="images/ui-anim_basic_16x16.gif" />
+  <table id="table"></table>
+  <div id="aftertable"></div>
+  <i>Spoiler warning: this site may contain spoilers!</i>
 </body>
 </html>

@@ -8,8 +8,8 @@
 
 table {
     border-collapse:collapse;
-margin-left:auto;
-margin-right:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 table td {
@@ -22,12 +22,16 @@ table td {
 }
 
 body {
-margin-left:auto;
-margin-right:auto;
-width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    width:516px;
 }
 
 input {
-width:70%;
+    width: 80%;
+}
+
+button {
+    margin-bottom: 20px;
 }
 
