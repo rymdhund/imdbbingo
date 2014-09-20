@@ -1,15 +1,15 @@
 .ui-autocomplete-loading {
-    background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+  background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
 }
 
 .checked {
-    background-color: green;
+  background-color: green;
 }
 
 table {
-    border-collapse:collapse;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  border-collapse:collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 a {
@@ -22,28 +22,28 @@ h2 a {
 }
 
 .spoilerwarning {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 table td {
-    border: 2px solid black;
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-    width: 150px;
-    font-size: 20px;
+  border: 2px solid black;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
 }
 
 body {
-    margin-left:auto;
-    margin-right:auto;
-    width:516px;
+  margin-left:auto;
+  margin-right:auto;
+  width:516px;
 }
 
 input {
-    width: 80%;
+  width: 80%;
 }
 
 button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
