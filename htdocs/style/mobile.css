@@ -6,6 +6,19 @@
     background-color: green;
 }
 
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    float: right;
+}
+
+.spoilerwarning {
+    margin-top: 10px;
+}
+
 table {
     border-collapse:collapse;
     margin-left:auto;
